@@ -27,7 +27,7 @@ public class Code {
         scanner.close();
     }
 
-    private static void insertUserData(String url, String user, String password, String id, String name) {
+    public static void insertUserData(String url, String user, String password, String id, String name) {
         Connection conn = null;
         PreparedStatement stmt = null;
 
