@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class Test {
+public class Code {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/testdb";
         String user = "root";
