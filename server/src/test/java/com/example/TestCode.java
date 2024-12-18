@@ -21,18 +21,6 @@ public class TestCode {
     private final PrintStream originalOut = System.out;
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-    @BeforeEach
-    void setUp() {
-        // Redirect System.out to capture output
-        System.setOut(new PrintStream(outContent));
-    }
-
-    @AfterEach
-    void tearDown() {
-        // Restore original System.out
-        System.setOut(originalOut);
-    }
-
     @Test
     void testMainMethod() {
 
