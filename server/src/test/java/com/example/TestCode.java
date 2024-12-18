@@ -38,7 +38,7 @@ public class TestCode {
         String simulatedInput = "1\nJohn Doe\n";
         System.setIn(new ByteArrayInputStream(simulatedInput.getBytes())); // Simulate user input
 
-        StaticCodeAnalysisExample.main(null);
+        Code.main(null);
 
         String output = outContent.toString();
         assertTrue(output.contains("Enter your ID:"));
@@ -57,7 +57,7 @@ public class TestCode {
         mockStaticDriverManager(mockConnection);
 
         // Invoke method
-        StaticCodeAnalysisExample.insertUserData("jdbc:mysql://localhost:3306/testdb", "user", "password", "1", "John");
+        Code.insertUserData("jdbc:mysql://localhost:3306/testdb", "user", "password", "1", "John");
 
         // Verify SQL execution
         verify(mockConnection).prepareStatement(anyString());
